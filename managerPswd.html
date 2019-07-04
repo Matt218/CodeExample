@@ -1,0 +1,50 @@
+  <!DOCTYPE html>
+<html>
+<head>
+<style>
+form
+{
+	position:absolute;
+	left:600px;
+	top:20em;
+	background-color:rgb(204,255,255);
+	height:150px;
+	width: 500px;
+	text-align:center;
+	padding-top:60px;
+}
+.btn
+{
+	background-color: white;
+	cursor:pointer;
+	font-family: serif,Times,"Times New Roman";
+}
+label
+{
+	padding-right:40px;
+	font-family: serif,Times,"Times New Roman";
+	font-weight: bold;
+}
+</style>
+</head>
+<body>
+<form>
+   <br> <label for="password">Enter your password </label><br>
+    <input type="password" id="pswd">
+    <input type="button" class= "btn" value="Enter" onclick="Passwordcheck();" />
+</form>
+<!--Function to check password the already set password is admin-->
+<script type="text/javascript">
+    function Passwordcheck() {
+        var confirmPassword = "admin";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="PM.html";
+        }
+        else{
+            alert("Wrong Password Entered.");
+        }
+    }
+</script>
+</body>
+</html>

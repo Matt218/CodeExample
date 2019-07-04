@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="TimeStyleSheet.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.codelist
+{
+	position:absolute;
+	top:340px;
+	left:200px;
+	background-color: #f0f8ff;
+	width:230px;
+	height:200px;
+}
+.wCode
+{
+	position:absolute;
+	top:420px;
+	left:790px;
+}
+#Wcode
+{
+	position:absolute;
+	top:380px;
+	left:790px;
+}
+.hours
+{
+	position:absolute;
+	top:710px;
+	left:507px;
+}
+.submit
+{
+	position:absolute;
+	top:710px;
+}
+</style>
+</head>
+<body>
+<script type="text/javascript">
+   function submitAlert() {
+
+            alert("submit successful.");
+    }
+</script>
+<a href="index.html"<i class="fa fa-arrow-left fa-lg"></i></a>
+<div id="title">
+<h1>Development Activites Time-sheet</h1>
+</div>
+
+<form>
+<p id="Enum">Employee Number</p> <input type ="text" name="ENum" placeholder="Enter Employee number..." class = "Enum"> <br>
+<p id ="Ename">Employee Name</p> <input type="text" name="EName" placeholder = "Enter Employee name..." class="Ename"> <br>
+<p id="date">Week Commencing</p> <input type="date" name="date" placeholder="Enter Date..." class = "workDate"> <br>
+<p id="Wcode"> Work Code</p> <input type="text" name="Wcode" placeholder="Enter Work Code..." class="wCode"> <br>
+</form>
+
+<p id="startTime">Start Time</p>
+<select class ="startTime">
+ <option value="8:00">8:30</option>
+<option value="9:30">9:30</option>
+<option value="10:30">10:30</option>
+<option value="11:30">11:30</option>
+<option value="12:30">12:30</option>
+<option value="13:30">13:30</option>
+<option value="14:30">14:30</option>
+<option value="15:30">15:30</option>
+<option value="16:30">16:30</option>
+<option value="17:30">17:30</option>
+</select>
+
+<p id="endTime">End Time</p>
+<select class ="endTime">
+ <option value="8:00">8:30</option>
+<option value="9:30">9:30</option>
+<option value="10:30">10:30</option>
+<option value="11:30">11:30</option>
+<option value="12:30">12:30</option>
+<option value="13:30">13:30</option>
+<option value="14:30">14:30</option>
+<option value="15:30">15:30</option>
+<option value="16:30">16:30</option>
+<option value="17:30">17:30</option>
+</select>
+
+<p id="hours">Hours(End-Start)</p>
+<select class = "hours">
+ <option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+</select>
+
+<!--<p id="over-time">Over-Time(hours)</p>
+<select class = "over-time">
+ <option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+</select>-->
+
+<textarea rows="10" cols="50" placeholder="Additional Information.." class="txtarea">
+</textarea>
+
+<form>
+<input type="button" value="Submit" onclick="submitAlert()" class="submit" />
+</form>
+<!--<p id="pstate">Project state</p>
+<select class = "projectState">
+ <option value="Start-up">Start-up</option>
+<option value="Definition">Definition</option>
+<option value="Delivery">Delivery</option>
+<option value="Warranty stage">Warranty stage</option>
+<option value="Planning">Planning</option>
+<option value="Completed">Completed</option>
+</select>-->
+<div class="codelist">
+Work Codes:
+<br>sickness - 111111<br>
+public holidays - 222222
+<br>annual leave - 333333<br>
+training - 444444
+<br>Management time - 555555<br>
+Maternity leave - 666666
+<br>Department meetings - 777777<br>
+Personal - 888888
+</div>
+</body>
+</html>
